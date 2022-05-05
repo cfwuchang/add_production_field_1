@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+    <record id="mrp_production_form_view_omnia_mrp_bom_update" model="ir.ui.view">
+        <field name="model">mrp.production</field>
+        <field name="inherit_id" ref="mrp.mrp_production_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='move_raw_ids']//field[@name='lot_ids']" position="after">
+                <field name="x_createUid"/>
+            </xpath>
+        </field>
+    </record> 
+</odoo>
